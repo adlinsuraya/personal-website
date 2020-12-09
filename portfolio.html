@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>MY PORTFOLIO</h1>
+<hr>
+
+<h2>PORTFOLIO</h2>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="personal-portfolio/mountain.jpg" alt="mountain" style="width:100%">
+      <h3>The Mountain Speak</h3>
+      <p>The world's tallest mountain ranges form when pieces of Earth's crust—called plates—smash against each other in a process called plate tectonics, and buckle up like the hood of a car in a head-on collision. The Himalaya in Asia formed from one such massive wreck that started about 55 million years ago.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="personal-portfolio/aurora.jpg" alt="aurora" style="width:100%">
+      <h3>Spirited Away</h3>
+      <p>An aurora, sometimes referred to as polar lights, northern lights, or southern lights, is a natural light display in the Earth's sky, predominantly seen in high-latitude regions. Auroras are the result of disturbances in the magnetosphere caused by solar wind.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="personal-portfolio/nature.jpg" alt="nature" style="width:100%">
+      <h3>The Nature Conservancy</h3>
+      <p>The Nature Conservancy is a charitable environmental organization, headquartered in Arlington, Virginia, United States. Founded in 1951, The Nature Conservancy has over one million members, and has protected more than 119,000,000 acres of land and thousands of miles of rivers worldwide</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="personal-portfolio/hiking.jpg" alt="hiking" style="width:100%">
+      <h3>50 Hiking Trails to Conquer in Malaysia</h3>
+      <p>Ready to rise to the challenge? Malaysia is home to breathtaking mountains, lush national parks and scenic landscapes that would excite any adventurous soul. In that spirit, we’ve compiled a list of 50 hiking trails across the nation that hiking enthusiasts, new or experienced, can try.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <img src="personal-portfolio/animal.jpg" alt="animal" style="width:100%">
+  <h3>WHAT IS ANIMAL CONSERVATION?</h3>
+  <p>Animal conservation is the act of protecting ecosystems and environments to protect the animals that live there.
+
+The importance of animal conservation is immeasurable, at a time where our planet is currently experiencing the sixth major extinction event in the 3.6 billion years that life has been on it.</p>
+  <p>This is also the first extinction event caused by humans and the only one to occur since the dinosaurs were wiped out some 65 million years ago.</p>
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
